@@ -10,6 +10,12 @@ return {
             },
             signature = { enabled = false },
             hover = { enabled = true },
+            progress = {
+                enabled = true,
+                filter = {
+                    kind = { "begin", "end" },
+                },
+            },
         }
         opts.routes = {
             {

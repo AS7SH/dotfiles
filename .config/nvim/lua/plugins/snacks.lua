@@ -9,6 +9,16 @@ return {
         animate = { enabled = false },
         statuscolumn = { enabled = false },
         words = { enabled = false },
+        lsp = {
+            progress = {
+                filter = {
+                    kind = {
+                        "begin",
+                        "end",
+                    },
+                },
+            },
+        },
         notifier = {
             timeout = 5000,
             width = { min = 40 },

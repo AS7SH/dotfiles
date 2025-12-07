@@ -7,6 +7,25 @@ vim.api.nvim_set_hl(0, "YankHighlight", { bg = "#696969", fg = "#FFFFFF" })
 -- highlight the borders
 vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#0DB9D7" })
 
+-- vim.api.nvim_set_hl(0, "CustomRainbow1", { fg = "#E0AF68" }) -- Bright Red
+-- vim.api.nvim_set_hl(0, "CustomRainbow2", { fg = "#BB9AF7" }) -- Bright Yellow
+-- vim.api.nvim_set_hl(0, "CustomRainbow3", { fg = "#73DACA" }) -- Bright Green
+-- vim.api.nvim_set_hl(0, "CustomRainbow4", { fg = "#FF9E64" }) -- Bright Cyan
+-- vim.api.nvim_set_hl(0, "CustomRainbow5", { fg = "#9ECE6A" }) -- Bright Cyan
+-- vim.api.nvim_set_hl(0, "CustomRainbow6", { fg = "#F7768E" }) -- Bright Cyan
+
+vim.api.nvim_set_hl(0, "CustomRainbow1", { fg = "#00E8C6" })
+-- Priority 2: Orchid Pink
+vim.api.nvim_set_hl(0, "CustomRainbow2", { fg = "#FCA7EA" })
+-- Priority 3: Sky Blue
+vim.api.nvim_set_hl(0, "CustomRainbow3", { fg = "#89DDFF" })
+-- Priority 4: Lime Green
+vim.api.nvim_set_hl(0, "CustomRainbow4", { fg = "#C3E88D" })
+-- Priority 5: Soft Yellow
+vim.api.nvim_set_hl(0, "CustomRainbow5", { fg = "#FFCB6B" })
+-- Priority 6: Coral Red
+vim.api.nvim_set_hl(0, "CustomRainbow6", { fg = "#FF5370" })
+
 -- vim.diagnostic.config({
 --     severity_sort = true,
 --     float = { border = "rounded", source = "if_many" },
