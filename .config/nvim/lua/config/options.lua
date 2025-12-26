@@ -11,7 +11,7 @@ opt.background = "dark"
 opt.showcmd = false
 opt.showmode = false
 opt.cmdheight = 0
-opt.laststatus = 0
+opt.laststatus = 3
 opt.pumblend = 10
 opt.pumheight = 10
 opt.smoothscroll = true
@@ -20,6 +20,7 @@ opt.virtualedit = "block"
 opt.wildmode = "longest:full,full"
 opt.winminwidth = 5
 opt.statuscolumn = ""
+opt.statusline = "%{&buftype == 'terminal' ? 'Terminal.fuck' : expand('%:t')}%=%{strftime('%H:%M')}"
 
 opt.fillchars = {
     foldopen = "",
@@ -33,7 +34,7 @@ opt.fillchars = {
 }
 
 -- Mouse
-opt.mouse = ""
+opt.mouse = "a"
 
 -- Tabs / Indentation
 opt.tabstop = 4

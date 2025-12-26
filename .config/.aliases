@@ -30,6 +30,7 @@ alias gs="git status"
 alias gi="git init"
 alias ga="git add"
 alias gc="git commit -m"
+alias gp="git push"
 
 alias ys="yadm status"
 alias ya="yadm add"
@@ -41,10 +42,13 @@ alias lg="lazygit"
 
 alias fd='fdfind'
 
+alias zed="/mnt/c/Users/asish/AppData/Local/Programs/Zed/Zed.exe"
+
 alias home="cd ~"
 alias config="cd ~/.config/"
 alias update="sudo apt update && sudo apt upgrade -y"
 alias cc="clear"
+alias e="exit"
 
 # alias nvim-main="NVIM_APPNAME=nvim-main nvim"
 # alias nvim-lazy="NVIM_APPNAME=nvim-lazy nvim"
