@@ -1,0 +1,122 @@
+[
+    {
+    "before": ["<C-\\>"],
+    "commands": ["workbench.action.terminal.toggleTerminal"]
+    },
+    {
+    "before": ["<C-h>"],
+    "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+    "before": ["<C-l>"],
+    "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+    "before": ["<C-j>"],
+    "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+    "before": ["<C-k>"],
+    "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+    "before": ["f", "o"],
+    "commands": ["editor.toggleFold"]
+    },
+    {
+    "before": ["<leader>", "s", "v"],
+    "commands": ["workbench.action.splitEditorRight"]
+    },
+    {
+    "before": ["<leader>", "s", "h"],
+    "commands": ["workbench.action.splitEditorDown"]
+    },
+    {
+    "before": ["<leader>", "s", "e"],
+    "commands": ["workbench.action.evenEditorWidths"]
+    },
+    {
+    "before": ["<leader>", "s", "o"],
+    "commands": [
+        "workbench.action.splitEditorRight",
+        "workbench.action.quickOpen"
+    ]
+    },
+    {
+    "before": ["<leader>", "s", "x"],
+    "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+    "before": ["<A-j>"],
+    "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+    "before": ["<A-k>"],
+    "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+    "before": ["<A-j>"],
+    "commands": ["editor.action.moveLinesDownAction"],
+    "when": "editorTextFocus && vim.mode == 'Insert'"
+    },
+    {
+    "before": ["<A-k>"],
+    "commands": ["editor.action.moveLinesUpAction"],
+    "when": "editorTextFocus && vim.mode == 'Insert'"
+    },
+    {
+    "before": ["<A-j>"],
+    "commands": ["editor.action.moveLinesDownAction"],
+    "when": "editorTextFocus && vim.mode == 'Visual'"
+    },
+    {
+    "before": ["<A-k>"],
+    "commands": ["editor.action.moveLinesUpAction"],
+    "when": "editorTextFocus && vim.mode == 'Visual'"
+    },
+    {
+    "before": ["<S-h>"],
+    "commands": ["workbench.action.previousEditor"]
+    },
+    {
+    "before": ["<S-l>"],
+    "commands": ["workbench.action.nextEditor"]
+    },
+    {
+    "before": ["[", "b"],
+    "commands": ["workbench.action.previousEditor"]
+    },
+    {
+    "before": ["]", "b"],
+    "commands": ["workbench.action.nextEditor"]
+    },
+    {
+    "before": ["<leader>", "b", "d"],
+    "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+    "before": ["<leader>", "b", "o"],
+    "commands": ["workbench.action.closeOtherEditors"]
+    },
+    {
+    "before": ["<leader>", "b", "D"],
+    "commands": ["workbench.action.closeEditorAndWindow"]
+    },
+    {
+    "before": ["<leader>", "K"],
+    "commands": ["editor.action.showHover"]
+    },
+    {
+    "before": ["<leader>", "c", "d"],
+    "commands": ["editor.action.showHover"]
+    },
+    {
+    "before": ["]", "d"],
+    "commands": ["editor.action.marker.next"]
+    },
+    {
+    "before": ["[", "d"],
+    "commands": ["editor.action.marker.prev"]
+    }
+
+]

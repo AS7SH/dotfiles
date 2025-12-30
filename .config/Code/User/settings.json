@@ -1,0 +1,38 @@
+{
+    "workbench.colorTheme": "One Dark Pro Night Flat",
+    "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "'Firacode Nerd Font', Consolas, 'Courier New', monospace",
+    "window.menuBarVisibility": "compact",
+    "workbench.activityBar.location": "hidden",
+    "workbench.statusBar.visible": false,
+    "workbench.navigationControl.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "editor.mouseWheelZoom": true,
+    "editor.smoothScrolling": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "explicit",
+    "terminal.integrated.enablePersistentSessions": false,
+    "editor.stickyScroll.enabled": false,
+    "terminal.integrated.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "jupyter.askForKernelRestart": false,
+    "jupyter.jupyterInterruptTimeout": 100,
+    "remote.autoForwardPortsSource": "hybrid",
+    "vim.leader": " ",
+    "vim.useCtrlKeys": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [";", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": []
+}

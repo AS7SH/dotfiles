@@ -4,7 +4,8 @@ return {
     event = "VeryLazy",
     opts = {
         size = 10,
-        open_mapping = [[<c-\>]],
+        open_mapping = [[;t]],
+        autochdir = true,
         hide_numbers = true,
         shade_filetypes = {},
         shade_terminals = true,

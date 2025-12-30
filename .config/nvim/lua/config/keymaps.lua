@@ -145,3 +145,4 @@ end
 
 -- quit
 map("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit All" })
+map("n", "<leader>Q", "<cmd>qa!<cr>", { desc = "Force Quit All" })

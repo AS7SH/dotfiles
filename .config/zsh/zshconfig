@@ -30,5 +30,3 @@ zstyle ':completion:*' group-name ''
 
 zstyle ':completion:*:descriptions' format '%B--- %d%b'
 zstyle ':completion:*:warnings' format '%F{red}No matches for:%f %d'
-
-export TZ=Asia/Kolkata
