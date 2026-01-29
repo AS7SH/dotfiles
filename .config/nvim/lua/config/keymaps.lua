@@ -10,6 +10,19 @@ map("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 map("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 map("n", "<C-S-v>", "<C-v>", { desc = "Enter into V-Block mode" })
 
+--compiling
+map("n", ";j", function()
+    local file = vim.fn.expand("%")
+    local class = vim.fn.expand("%:r")
+    require("toggleterm").exec("javac " .. file .. " && java " .. class .. "\n")
+    vim.schedule(function()
+        vim.cmd("stopinsert")
+    end)
+end, { desc = "Compile and run Java file" })
+
+--toggleterm
+map({ "n", "x", "v", "t" }, ";t", "<CMD>ToggleTerm<CR>", { desc = "Open terminal" })
+
 -- lazy
 map("n", "<leader>ll", "<cmd>Lazy<CR>")
 map("n", "<leader>lp", "<cmd>Lazy profile<CR>")

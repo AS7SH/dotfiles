@@ -11,10 +11,10 @@ return {
             signature = { enabled = false },
             hover = { enabled = true },
             progress = {
-                enabled = true,
-                filter = {
-                    kind = { "begin", "end" },
-                },
+                enabled = false,
+                -- filter = {
+                --     kind = { "begin", "end" },
+                -- },
             },
         }
         opts.routes = {
@@ -32,6 +32,6 @@ return {
         }
     end,
     keys = {
-        { "<leader>hn", "<CMD>NoiceDismiss<CR>", { desc = "Dismiss all notifications" } },
+        { "<leader>nd", "<CMD>NoiceDismiss<CR>", { desc = "Dismiss all notifications" } },
     },
 }

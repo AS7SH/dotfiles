@@ -50,6 +50,8 @@ alias update="sudo apt update && sudo apt upgrade -y"
 alias cc="clear"
 alias e="exit"
 
+alias copy="xclip -selection clipboard"
+
 # alias nvim-main="NVIM_APPNAME=nvim-main nvim"
 # alias nvim-lazy="NVIM_APPNAME=nvim-lazy nvim"
 
