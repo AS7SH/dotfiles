@@ -4,6 +4,9 @@ return {
         opts = function(_, opts)
             opts.modes = { insert = true, command = false }
         end,
+        mappings = {
+            ["<CR>"] = { action = "closeopen", pair = "><", neigh_pattern = "><" },
+        },
     },
     {
         "nvim-mini/mini.surround",

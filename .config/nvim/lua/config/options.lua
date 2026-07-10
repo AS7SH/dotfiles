@@ -59,20 +59,18 @@ opt.encoding = "utf-8"
 opt.backspace = "indent,eol,start"
 opt.clipboard = "unnamedplus"
 
-if not vim.g.neovide then
-    vim.g.clipboard = {
-        name = "xclip",
-        copy = {
-            ["+"] = "xclip -selection clipboard",
-            ["*"] = "xclip -selection primary",
-        },
-        paste = {
-            ["+"] = "xclip -selection clipboard -o",
-            ["*"] = "xclip -selection primary -o",
-        },
-        cache_enabled = 1,
-    }
-end
+vim.g.clipboard = {
+    name = "xclip",
+    copy = {
+        ["+"] = "xclip -selection clipboard",
+        ["*"] = "xclip -selection primary",
+    },
+    paste = {
+        ["+"] = "xclip -selection clipboard -o",
+        ["*"] = "xclip -selection primary -o",
+    },
+    cache_enabled = 1,
+}
 
 -- Window / Splits
 opt.splitright = true

@@ -10,6 +10,8 @@ map("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 map("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 map("n", "<C-S-v>", "<C-v>", { desc = "Enter into V-Block mode" })
 
+map("n", "bd", "<cmd>bdelete<cr>", { desc = "Delete current buffer" })
+
 --compiling
 map("n", ";j", function()
     local file = vim.fn.expand("%")
