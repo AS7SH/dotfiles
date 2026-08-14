@@ -20,7 +20,7 @@ opt.virtualedit = "block"
 opt.wildmode = "longest:full,full"
 opt.winminwidth = 5
 opt.statuscolumn = ""
-opt.statusline = "%{&buftype == 'terminal' ? 'Terminal.fuck' : expand('%:t')}%=%{strftime('%H:%M')}"
+opt.statusline = "%{&buftype == 'terminal' ? 'Terminal' : expand('%:t')}%=%{strftime('%H:%M')}"
 
 opt.fillchars = {
     foldopen = "",

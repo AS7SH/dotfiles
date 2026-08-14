@@ -14,11 +14,14 @@ export PATH=/snap/bin:$PATH
 # neovim application path
 export PATH="$PATH:/opt/neovim/bin"
 
+# go path
+export PATH="$PATH:/usr/local/go/bin"
+
 # yazi path
 export PATH="/opt/yazi:$PATH"
 
 # helix application path
-export PATH="/opt/helix:$PATH"
+# export PATH="/opt/helix:$PATH"
 
 # rust binaries
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"

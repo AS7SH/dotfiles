@@ -124,6 +124,12 @@ python3 -m venv venv
 source ~/projects/python/venv/bin/activate
 
 
+----------------------------------------------
+12) copy the .wslconfig to users folder of windows
+--------------------------------------------------
+cp ~/.config/extras/.wslconfig /mnt/c/Users/asish/
+
+
 ====================================================
    SETUP COMPLETE! Logout & login to activate zsh.
 ====================================================

@@ -57,6 +57,20 @@ vim.api.nvim_create_autocmd({ "VimResized" }, {
     end,
 })
 
+-- -- delete unused buffers
+-- vim.api.nvim_create_autocmd("BufHidden", {
+--     desc = "Delete hidden buffers to keep neovim light",
+--     callback = function(event)
+--         if vim.bo[event.buf].buftype == "" and not vim.bo[event.buf].modified then
+--             vim.schedule(function()
+--                 if vim.api.nvim_buf_is_valid(event.buf) then
+--                     vim.cmd("bwipeout " .. event.buf)
+--                 end
+--             end)
+--         end
+--     end,
+-- })
+--
 -- go to last loc when opening a buffer
 vim.api.nvim_create_autocmd("BufReadPost", {
     group = vim.api.nvim_create_augroup("last_loc", { clear = true }),

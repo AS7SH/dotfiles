@@ -34,16 +34,16 @@ return {
         { ";s", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" } },
         { "<leader>fu", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" } },
         {
-            ";c",
-            function()
-                require("telescope.builtin").find_files({ cwd = vim.fn.stdpath("config") })
-            end,
-            { desc = "Goto config" },
-        },
-        {
             ";a",
             function()
                 require("telescope.builtin").find_files({ cwd = "~/.config", prompt_title = "Search Config Files" })
+            end,
+            { desc = "Search Config Files" },
+        },
+        {
+            ";c",
+            function()
+                require("telescope.builtin").find_files({ cwd = "~/.config/nvim", prompt_title = "Search Config Files" })
             end,
             { desc = "Search Config Files" },
         },
