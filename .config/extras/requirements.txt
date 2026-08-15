@@ -17,6 +17,7 @@ sudo apt install -y \
 sudo ln -s $(which fdfind) /usr/local/bin/fd
 sudo ln -s /usr/bin/batcat /usr/local/bin/bat
 
+curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
 
 ---------------------------
 2) Clone Dotfiles + Apply
@@ -134,6 +135,11 @@ cp ~/.config/extras/.wslconfig /mnt/c/Users/asish/
    SETUP COMPLETE! Logout & login to activate zsh.
 ====================================================
 
+#-------------KITTY config in windows-----------
+cmd.exe /c mklink /D "C:\Users\asish\.config\kitty" "\\wsl.localhost\Debian\home\ashu\dotfiles\.config\kitty"
+
+#-------------wslconfig-----------------
+cmd.exe /c mklink "C:\Users\asish\.wslconfig" "\\wsl.localhost\Debian\home\ashu\dotfiles\.config\.wslconfig"
 
 #-------------NEOVIDE---------------
 

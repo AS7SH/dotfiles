@@ -48,3 +48,4 @@ function cd(){
 }
 
 export WINIT_UNIX_BACKEND=x11
+eval "$(zoxide init zsh)"

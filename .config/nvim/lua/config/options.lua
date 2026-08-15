@@ -59,18 +59,35 @@ opt.encoding = "utf-8"
 opt.backspace = "indent,eol,start"
 opt.clipboard = "unnamedplus"
 
-vim.g.clipboard = {
-    name = "xclip",
-    copy = {
-        ["+"] = "xclip -selection clipboard",
-        ["*"] = "xclip -selection primary",
-    },
-    paste = {
-        ["+"] = "xclip -selection clipboard -o",
-        ["*"] = "xclip -selection primary -o",
-    },
-    cache_enabled = 1,
-}
+local is_kitty = os.getenv("TERM") == "xterm-kitty" or os.getenv("KITTY_WINDOW_ID") ~= nil
+if is_kitty and not vim.g.neovide then
+    vim.g.clipboard = {
+        name = "OSC 52",
+        copy = {
+            ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
+
+            ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+        },
+        paste = {
+            ["+"] = require("vim.ui.clipboard.osc52").paste("+"),
+            ["*"] = require("vim.ui.clipboard.osc52").paste("*"),
+        },
+    }
+else
+    vim.g.clipboard = {
+        name = "xclip",
+        copy = {
+            ["+"] = "xclip -selection clipboard",
+            ["*"] = "xclip -selection primary",
+        },
+        paste = {
+            ["+"] = "xclip -selection clipboard -o",
+
+            ["*"] = "xclip -selection primary -o",
+        },
+        cache_enabled = 1,
+    }
+end
 
 -- Window / Splits
 opt.splitright = true

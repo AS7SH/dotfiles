@@ -41,6 +41,16 @@ map("n", "<leader>p", function()
     vim.lsp.inlay_hint.enable(not enabled)
 end, { desc = "Toggle Inlay Hints" })
 
+-- Toggle between 0 (beginning of line) and $ (end of line)
+vim.keymap.set({ "n", "v", "o" }, "S", function()
+    -- Check if the cursor is at the first column
+    if vim.fn.col(".") == 1 then
+        return "$" -- If at the start, jump to the end
+    else
+        return "0" -- If anywhere else (or at the end), jump to the start
+    end
+end, { expr = true, desc = "Toggle between 0 and $" })
+
 -- split window
 map("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
 map("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
